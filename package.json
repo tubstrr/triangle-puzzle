@@ -5,6 +5,8 @@
     "dev": "nuxt dev"
   },
   "devDependencies": {
-    "nuxt": "^3.0.0"
+    "nuxt": "^3.0.0",
+    "sass": "^1.72.0",
+    "yarn": "^1.22.22"
   }
 }
