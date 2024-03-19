@@ -1,9 +1,4 @@
 export default defineEventHandler(async (event) => {
-	// Get State:
-	const body = await readBody(event);
-	const { state } = body;
-	if (!state) return { error: 'No state provided' };
-
 	// Setup:
 	const pieces = [
 		{
@@ -294,7 +289,7 @@ export default defineEventHandler(async (event) => {
 
 	let currentTime = performance.timeOrigin + performance.now();
 
-	main(0, state, pieces);
+	main();
 
 	currentTime = performance.timeOrigin + performance.now() - currentTime;
 
